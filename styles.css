@@ -1,0 +1,24 @@
+:root {
+  --black: #121212;
+  --dark-blue: #19202d;
+  --grey-100: #e7eaee;
+  --grey-200: #cfcfcf;
+  --grey-400: #676d7e;
+  --grey-500: #48556a;
+  --purple-50: #ede4ff;
+  --purple-300: #a775f1;
+  --purple-500: #733fc8;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.813rem;
+}
