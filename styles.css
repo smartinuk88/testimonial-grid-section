@@ -24,7 +24,73 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: var(--text-md);
   font-weight: var(--font-regular);
+  color: #fff;
+  background: #f6f5f6;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five";
+  gap: 2rem;
+  margin: 4.5rem 2rem;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.testimonial--one {
+  grid-area: one;
+  background: var(--purple-500);
+}
+
+.testimonial__author-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonial__author-image {
+  border: 2px solid var(--purple-300);
+  border-radius: 50%;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.testimonial__author-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial__author-profession {
+  color: var(--purple-50);
+  font-size: 0.688rem;
+}
+
+.testimonial__heading {
+  font-size: var(--text-lg);
+  line-height: 1.2;
+  font-weight: var(--font-bold);
+}
+
+.testimonial__paragraph {
+  color: var(--purple-50);
+  line-height: 1.4;
 }
