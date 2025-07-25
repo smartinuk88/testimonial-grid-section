@@ -8,6 +8,11 @@
   --purple-50: #ede4ff;
   --purple-300: #a775f1;
   --purple-500: #733fc8;
+  --font-regular: 500;
+  --font-bold: 600;
+  --text-sm: 0.688rem;
+  --text-md: 0.813rem;
+  --text-lg: 1.25rem;
 }
 
 *,
@@ -20,5 +25,6 @@
 
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 0.813rem;
+  font-size: var(--text-md);
+  font-weight: var(--font-regular);
 }
